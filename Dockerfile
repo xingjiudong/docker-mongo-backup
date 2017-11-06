@@ -2,6 +2,6 @@ FROM mongo:latest
 
 MAINTAINER xjd <25635680@qq.com>
 
-COPY ./SETUP.sh  /
+COPY ./setup.sh  /
 
-CMD ["/SETUP.sh"]
+CMD ["/setup.sh"]
