@@ -8,5 +8,6 @@ PASSWORD=${PASSWORD}
 AUTHENTICATIONDATABASE=${AUTHENTICATIONDATABASE}
 OUT=${OUT}
 
-mongod && mongodump -h ${HOST} -d ${DB} -u ${USERNAME} -p ${PASSWORD} --authenticationDatabase ${AUTHENTICATIONDATABASE} -o ${OUT} 
+mongod 
+mongodump -h ${HOST} -d ${DB} -u ${USERNAME} -p ${PASSWORD} --authenticationDatabase ${AUTHENTICATIONDATABASE} -o ${OUT} 
 
